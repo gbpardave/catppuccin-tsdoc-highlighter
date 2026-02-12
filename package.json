@@ -1,0 +1,109 @@
+{
+  "name": "catppuccin-tsdoc-highlighter",
+  "displayName": "Catppuccin TSDoc Highlighter",
+  "description": "🐱 Elegant TSDoc/JSDoc comment highlighter with Catppuccin-inspired pastel colors. Highlights tags, types, parameters, descriptions, and links with soothing colors.",
+  "version": "1.0.0",
+  "publisher": "gbpardave",
+  "author": {
+    "name": "gbpardave"
+  },
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "keywords": [
+    "catppuccin",
+    "tsdoc",
+    "jsdoc",
+    "documentation",
+    "comments",
+    "highlighter",
+    "pastel",
+    "typescript",
+    "javascript"
+  ],
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:vue",
+    "onLanguage:svelte",
+    "onLanguage:java",
+    "onLanguage:php",
+    "onLanguage:csharp",
+    "onLanguage:dart"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Catppuccin TSDoc Highlighter",
+      "properties": {
+        "catppuccinTsdoc.flavor": {
+          "type": "string",
+          "default": "mocha",
+          "enum": [
+            "latte",
+            "frappe",
+            "macchiato",
+            "mocha"
+          ],
+          "enumDescriptions": [
+            "🌻 Latte — Light theme with warm tones",
+            "🪴 Frappé — Muted dark theme",
+            "🌺 Macchiato — Medium contrast dark theme",
+            "🌿 Mocha — The Original dark theme"
+          ],
+          "description": "Choose your Catppuccin flavor for TSDoc highlighting"
+        },
+        "catppuccinTsdoc.enableItalicDescriptions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use italic style for tag descriptions"
+        },
+        "catppuccinTsdoc.enableBoldTags": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use bold style for TSDoc tags (@param, @returns, etc.)"
+        },
+        "catppuccinTsdoc.opacity": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0.3,
+          "maximum": 1,
+          "description": "Opacity for the highlight decorations (0.3 - 1.0)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "catppuccinTsdoc.switchFlavor",
+        "title": "Catppuccin TSDoc: Switch Flavor"
+      },
+      {
+        "command": "catppuccinTsdoc.refresh",
+        "title": "Catppuccin TSDoc: Refresh Highlights"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbpardave/catppuccin-tsdoc-highlighter"
+  }
+}
