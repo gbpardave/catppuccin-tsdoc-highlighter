@@ -56,26 +56,7 @@ Press `Ctrl+Shift+P` → `Catppuccin TSDoc: Switch Flavor` to pick from:
 
 ## Example
 
-```typescript
-/**
- * Calculates the total price for a shopping cart.
- *
- * This function applies discounts and taxes based on
- * the user's location and membership status.
- *
- * @param {CartItem[]} items - The items in the cart
- * @param {string} couponCode - Optional discount coupon
- * @param {UserProfile} user - The authenticated user
- * @returns {PriceResult} The calculated total with breakdown
- * @throws {InvalidCouponError} When coupon code is expired
- * @example
- * const result = calculateTotal(items, 'SAVE20', user);
- * console.log(result.total);
- * @since 2.1.0
- * @see {@link ShoppingCart} for cart management
- * @deprecated Use {@link calculateTotalV2} instead
- */
-```
+![TSDoc Highlight Example](assets/example.png)
 
 ## Development
 
