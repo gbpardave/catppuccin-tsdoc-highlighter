@@ -1,18 +1,18 @@
-# 🐱 Catppuccin TSDoc Highlighter
+# Catppuccin TSDoc Highlighter
 
 > _Soothing pastel TSDoc/JSDoc comment highlighting for the high-spirited!_
 
 A Visual Studio Code extension that brings **Catppuccin's elegant pastel palette** to your TSDoc and JSDoc documentation comments. Each tag, type, parameter, and description gets its own beautiful color, making your documentation not just readable — but _gorgeous_.
 
-## ✨ Features
+## Features
 
-- 🎨 **4 Catppuccin flavors**: Mocha, Macchiato, Frappé, and Latte
-- 📝 **Smart parsing**: Highlights `@param`, `@returns`, `@throws`, `@example`, `@deprecated`, `@see`, `@since`, `@link`, types `{Type}`, parameter names, and descriptions
-- ⚡ **Real-time**: Updates as you type with debounced rendering
-- 🔧 **Configurable**: Toggle italic/bold, adjust opacity, switch flavors via command palette
-- 🌐 **Multi-language**: Works with TypeScript, JavaScript, Java, PHP, C#, Dart, Vue, Svelte
+- **4 Catppuccin flavors**: Mocha, Macchiato, Frappé, and Latte
+- **Smart parsing**: Highlights `@param`, `@returns`, `@throws`, `@example`, `@deprecated`, `@see`, `@since`, `@link`, types `{Type}`, parameter names, and descriptions
+- **Real-time**: Updates as you type with debounced rendering
+- **Configurable**: Toggle italic/bold, adjust opacity, switch flavors via command palette
+- **Multi-language**: Works with TypeScript, JavaScript, Java, PHP, C#, Dart, Vue, Svelte
 
-## 🎨 Color Mapping (Mocha)
+## Color Mapping (Mocha)
 
 | Element                     | Color               | Hex       |
 | --------------------------- | ------------------- | --------- |
@@ -30,22 +30,22 @@ A Visual Studio Code extension that brings **Catppuccin's elegant pastel palette
 | `@default` values           | Flamingo            | `#f2cdcd` |
 | `/**` `*/` `*` delimiters   | Overlay 1           | `#7f849c` |
 
-## 🚀 Quick Start
+## Quick Start
 
 1. Install the extension
 2. Open any TypeScript/JavaScript file with JSDoc/TSDoc comments
-3. Enjoy the colors! 🐱
+3. Enjoy the colors!
 
 ### Switch Flavor
 
 Press `Ctrl+Shift+P` → `Catppuccin TSDoc: Switch Flavor` to pick from:
 
-- 🌿 **Mocha** — The Original dark theme
-- 🌺 **Macchiato** — Medium contrast
-- 🪴 **Frappé** — Muted dark
-- 🌻 **Latte** — Light theme
+- **Mocha** — The Original dark theme
+- **Macchiato** — Medium contrast
+- **Frappé** — Muted dark
+- **Latte** — Light theme
 
-## ⚙️ Settings
+## Settings
 
 | Setting                                    | Default | Description                   |
 | ------------------------------------------ | ------- | ----------------------------- |
@@ -54,7 +54,7 @@ Press `Ctrl+Shift+P` → `Catppuccin TSDoc: Switch Flavor` to pick from:
 | `catppuccinTsdoc.enableBoldTags`           | `true`  | Bold tags                     |
 | `catppuccinTsdoc.opacity`                  | `1`     | Highlight opacity (0.3 - 1.0) |
 
-## 📖 Example
+## Example
 
 ```typescript
 /**
@@ -77,7 +77,7 @@ Press `Ctrl+Shift+P` → `Catppuccin TSDoc: Switch Flavor` to pick from:
  */
 ```
 
-## 🏗️ Development
+## Development
 
 ```bash
 # Clone
@@ -92,7 +92,7 @@ npm run compile
 # Press F5 to launch Extension Development Host
 ```
 
-## 📦 Instalación Local (uso personal)
+## Instalación Local (uso personal)
 
 ```bash
 # 1. Empaquetar la extensión
@@ -103,9 +103,9 @@ npx @vscode/vsce package --allow-missing-repository
 code --install-extension catppuccin-tsdoc-highlighter-1.0.0.vsix
 ```
 
-> 💡 Si actualizas el código, repite los mismos 2 comandos para reinstalar.
+> Si actualizas el código, repite los mismos 2 comandos para reinstalar.
 
-## 📄 License
+## License
 
 MIT © gbpardave
 
@@ -116,5 +116,5 @@ MIT © gbpardave
 </p>
 
 <p align="center">
-  Made with 💜 using <a href="https://catppuccin.com">Catppuccin</a> colors
+  Made with <a href="https://catppuccin.com">Catppuccin</a> colors
 </p>
